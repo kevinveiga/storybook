@@ -23,6 +23,5 @@ jobs:
         id: deployment
         uses: bitovi/github-actions-react-to-ghp@v1
         with:
-          build_command: yarn build-storybook
           # Upload entire repository
-          path: './storybook-static'
+          publish_dir: './storybook-static'
