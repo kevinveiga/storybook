@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: bitovi/github-actions-react-to-ghp@v1
         with:
           # Upload entire repository
           path: './storybook-static'
