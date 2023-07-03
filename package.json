@@ -14,9 +14,7 @@
     "start": "next start",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "predeploy": "yarn export",
-    "deploy": "gh-pages -d out"
+    "build-storybook": "storybook build -o out/storybook-static"
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
