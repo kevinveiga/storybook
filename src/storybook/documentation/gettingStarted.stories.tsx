@@ -200,6 +200,12 @@ function GettingStartedWithHooks(): ReactElement {
         </li>
 
         <li>
+          hooks:
+          <br />
+          <Subtitle2Docs>Actions, contexts, reducers e custom hooks.</Subtitle2Docs>
+        </li>
+
+        <li>
           pages:
           <br />
           <Subtitle2Docs>Arquitetura do NextJS.</Subtitle2Docs>
@@ -209,12 +215,6 @@ function GettingStartedWithHooks(): ReactElement {
           services:
           <br />
           <Subtitle2Docs>Funções de requisição que utilizam o Axios e configuração de middleware.</Subtitle2Docs>
-        </li>
-
-        <li>
-          stores:
-          <br />
-          <Subtitle2Docs>Actions, contexts, reducers e custom hooks.</Subtitle2Docs>
         </li>
 
         <li>
