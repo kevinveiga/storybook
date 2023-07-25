@@ -44,7 +44,7 @@ function FetchAxiosWithHooks(): ReactElement {
       <BoxDocs>
         <SyntaxHighlighter language="javascript">
           {`import { apiUrlUsuarios } from '@/configApi';
-import { useSWRGetFetch } from '@/stores/fetch/useSWRGetFetch';
+import { useSWRGetFetch } from '@/hooks/fetch/useSWRGetFetch';
 
 ...
 

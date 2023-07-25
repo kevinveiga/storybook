@@ -28,7 +28,7 @@ import dayjs from 'dayjs';
 import { apiUrlLogin } from '@/configApi';
 import { maskPhone } from '@/helpers/mask';
 import { postFetch } from '@/services/fetch';
-import { useSWRGetFetch } from '@/stores/fetch/useSWRGetFetch';
+import { useSWRGetFetch } from '@/hooks/fetch/useSWRGetFetch';
 
 // COMPONENTS AND STYLED COMPONENTS OF COMPONENTS
 import { DarkModeBtnStyled } from '@/components/layout/layoutStyled';
