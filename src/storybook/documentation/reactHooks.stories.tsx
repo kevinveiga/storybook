@@ -237,9 +237,9 @@ export default yup;`}
         </li>
 
         <li>
-          Container / Presenter.
+          Pattern Composição.
           <a
-            href="https://itnext.io/best-practices-of-react-container-presenter-pattern-only-pros-know-33f2095647fa"
+            href="https://www.youtube.com/watch?v=oPOKpSFqy-I&list=WL&index=11&t=9s&ab_channel=Rocketseat"
             rel="noopener noreferrer"
             target="_blank"
           >
