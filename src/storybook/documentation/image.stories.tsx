@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, StrongDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, StrongDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function ImageWithHooks(): ReactElement {
   return (
@@ -59,13 +59,13 @@ import image1 from '@/public/images/image-1.png';
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Image'
-} as Meta;
+} as Meta
 
 export const Image: StoryObj = {
   render: () => <ImageWithHooks />
-};
+}

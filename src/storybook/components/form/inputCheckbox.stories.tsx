@@ -1,15 +1,15 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { InputCheckbox, Label } from '@/components/form/form';
-import { FormStyled } from '@/components/form/formStyled';
+import { InputCheckbox, Label } from '@/components/form/form'
+import { FormStyled } from '@/components/form/formStyled'
 
 function InputCheckboxWithHooks(): ReactElement {
   // FORM
   const handleSubmit = (): void => {
-    return undefined;
-  };
+    return undefined
+  }
 
   return (
     <FormStyled onSubmit={handleSubmit}>
@@ -17,14 +17,14 @@ function InputCheckboxWithHooks(): ReactElement {
 
       <InputCheckbox idInput="id-checkbox" label="Checkbox" name="checkbox" />
     </FormStyled>
-  );
+  )
 }
 
 export default {
   component: InputCheckbox,
   title: 'Components/Form'
-} as Meta;
+} as Meta
 
 export const InputCheckboxDefault: StoryObj = {
   render: () => <InputCheckboxWithHooks />
-};
+}

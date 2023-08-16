@@ -1,18 +1,18 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { InputFile, InputFileThumbnail, Label, LabelFile } from '@/components/form/form';
-import { FormStyled, LabelFileThumbnailStyled } from '@/components/form/formStyled';
-import { SvgThumbnail } from '@/components/svg/svgStore';
+import { InputFile, InputFileThumbnail, Label, LabelFile } from '@/components/form/form'
+import { FormStyled, LabelFileThumbnailStyled } from '@/components/form/formStyled'
+import { SvgThumbnail } from '@/components/svg/svgStore'
 
-import { Spacer } from '@/styles/layout';
+import { Spacer } from '@/styles/layout'
 
 function InputFileWithHooks(): ReactElement {
   // FORM
   const handleSubmit = (): void => {
-    return undefined;
-  };
+    return undefined
+  }
 
   return (
     <FormStyled onSubmit={handleSubmit}>
@@ -30,14 +30,14 @@ function InputFileWithHooks(): ReactElement {
 
       <InputFileThumbnail idInput="id-file-thumbnail" name="file-thumbnail" />
     </FormStyled>
-  );
+  )
 }
 
 export default {
   component: InputFile,
   title: 'Components/Form'
-} as Meta;
+} as Meta
 
 export const InputFileDefault: StoryObj = {
   render: () => <InputFileWithHooks />
-};
+}

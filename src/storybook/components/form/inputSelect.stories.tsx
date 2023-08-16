@@ -1,24 +1,24 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import yup from '@/helpers/yup';
+import yup from '@/helpers/yup'
 
-import { Label, Select } from '@/components/form/form';
-import { SelectCustom } from '@/components/form/formCustom';
-import { FormStyled } from '@/components/form/formStyled';
-import { OptionYear } from '@/components/form/selectOption';
-import { SvgFilter } from '@/components/svg/svgStore';
+import { Label, Select } from '@/components/form/form'
+import { SelectCustom } from '@/components/form/formCustom'
+import { FormStyled } from '@/components/form/formStyled'
+import { OptionYear } from '@/components/form/selectOption'
+import { SvgFilter } from '@/components/svg/svgStore'
 
-import { Box } from '@/styles/flex';
-import { Spacer } from '@/styles/layout';
+import { Box } from '@/styles/flex'
+import { Spacer } from '@/styles/layout'
 
 function SelectWithHooks(): ReactElement {
   // VARIABLE
   const initialData: any = {
     select: '',
     'select-custom': ''
-  };
+  }
   const optionsFilterType = [
     {
       label: 'all',
@@ -32,13 +32,13 @@ function SelectWithHooks(): ReactElement {
       label: 'last finished',
       value: 'last-finished'
     }
-  ];
+  ]
 
   // VALIDATE
   const validationSchema = yup.object().shape({
     select: yup.string().required(),
     'select-custom': yup.string().required()
-  });
+  })
 
   // FORM
   const handleSubmit = (formData: any): void => {
@@ -49,17 +49,17 @@ function SelectWithHooks(): ReactElement {
         })
         .catch((yupError: any) => {
           if (yupError instanceof yup.ValidationError) {
-            const errorMessages: { [key: string]: any } = {};
+            const errorMessages: { [key: string]: any } = {}
 
             yupError.inner.forEach((item: any) => {
-              errorMessages[item.path] = item.message;
-            });
+              errorMessages[item.path] = item.message
+            })
           }
-        });
-    };
+        })
+    }
 
-    submit().catch(() => null);
-  };
+    submit().catch(() => null)
+  }
 
   return (
     <FormStyled initialData={initialData} onSubmit={handleSubmit}>
@@ -87,14 +87,14 @@ function SelectWithHooks(): ReactElement {
         />
       </Box>
     </FormStyled>
-  );
+  )
 }
 
 export default {
   component: Select,
   title: 'Components/Form'
-} as Meta;
+} as Meta
 
 export const SelectDefault: StoryObj = {
   render: () => <SelectWithHooks />
-};
+}

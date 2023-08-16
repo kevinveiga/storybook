@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, StrongDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, StrongDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function CarouselWithHooks(): ReactElement {
   return (
@@ -68,13 +68,13 @@ const CarouselManagerDefaultDynamic = dynamic<any>(() => import('@/components/ca
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Carousel'
-} as Meta;
+} as Meta
 
 export const Carousel: StoryObj = {
   render: () => <CarouselWithHooks />
-};
+}

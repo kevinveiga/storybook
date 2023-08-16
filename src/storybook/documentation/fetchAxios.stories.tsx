@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function FetchAxiosWithHooks(): ReactElement {
   return (
@@ -104,13 +104,13 @@ formRef.current?.setErrors({});`}
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Fetch - Axios'
-} as Meta;
+} as Meta
 
 export const FetchAxios: StoryObj = {
   render: () => <FetchAxiosWithHooks />
-};
+}

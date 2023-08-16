@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { ModalMessage } from '@/components/modal/modalMessage';
+import { ModalMessage } from '@/components/modal/modalMessage'
 
 export default {
   args: {
@@ -10,6 +10,6 @@ export default {
   },
   component: ModalMessage,
   title: 'Components/Modals'
-} as Meta;
+} as Meta
 
-export const ModalMessageDefault: StoryObj = {};
+export const ModalMessageDefault: StoryObj = {}

@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, StrongDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, StrongDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function ReactHooksWithHooks(): ReactElement {
   return (
@@ -321,13 +321,13 @@ export default yup;`}
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/React Hooks'
-} as Meta;
+} as Meta
 
 export const ReactHooks: StoryObj = {
   render: () => <ReactHooksWithHooks />
-};
+}

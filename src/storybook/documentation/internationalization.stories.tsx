@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, StrongDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, StrongDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function InternationalizationWithHooks(): ReactElement {
   return (
@@ -146,13 +146,13 @@ const { data, isLoading } = useSWRGetGraphql({
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Internationalization'
-} as Meta;
+} as Meta
 
 export const Internationalization: StoryObj = {
   render: () => <InternationalizationWithHooks />
-};
+}

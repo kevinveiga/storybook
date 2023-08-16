@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { Progress } from '@/components/progress/progress';
+import { Progress } from '@/components/progress/progress'
 
 export default {
   args: {
@@ -8,6 +8,6 @@ export default {
   },
   component: Progress,
   title: 'Components/Progress'
-} as Meta;
+} as Meta
 
-export const ProgressDefault: StoryObj = {};
+export const ProgressDefault: StoryObj = {}

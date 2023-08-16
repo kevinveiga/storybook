@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { Flex } from '@/styles/flex';
-import { BoxColor, BoxDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
-import { P, Span } from '@/styles/text';
-import { variable } from '@/styles/variable';
+import { Flex } from '@/styles/flex'
+import { BoxColor, BoxDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
+import { P, Span } from '@/styles/text'
+import { variable } from '@/styles/variable'
 
 function ColorPaletteWithHooks(): ReactElement {
   return (
@@ -26,7 +26,7 @@ function ColorPaletteWithHooks(): ReactElement {
                 {item[1]}
               </P>
             </BoxDocs>
-          );
+          )
         })}
       </Flex>
 
@@ -40,17 +40,17 @@ function ColorPaletteWithHooks(): ReactElement {
 
               <Span textAlign="center">{item}</Span>
             </BoxDocs>
-          );
+          )
         })}
       </Flex>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Design/Color Palette'
-} as Meta;
+} as Meta
 
 export const ColorPalette: StoryObj = {
   render: () => <ColorPaletteWithHooks />
-};
+}

@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function TypescriptWithHooks(): ReactElement {
   return (
@@ -176,13 +176,13 @@ export const section = css<ILayoutStyled>\`
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Typescript'
-} as Meta;
+} as Meta
 
 export const Typescript: StoryObj = {
   render: () => <TypescriptWithHooks />
-};
+}

@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
 import {
   SvgArrowDown,
@@ -31,12 +31,12 @@ import {
   SvgUserPlus,
   SvgView,
   SvgViewDisabled
-} from '@/components/svg/svgStore';
+} from '@/components/svg/svgStore'
 
-import { Box, Flex } from '@/styles/flex';
-import { BoxDocs, Title1Docs } from '@/styles/storybook';
-import { P } from '@/styles/text';
-import { variable } from '@/styles/variable';
+import { Box, Flex } from '@/styles/flex'
+import { BoxDocs, Title1Docs } from '@/styles/storybook'
+import { P } from '@/styles/text'
+import { variable } from '@/styles/variable'
 
 function IconsWithHooks(): ReactElement {
   return (
@@ -215,13 +215,13 @@ function IconsWithHooks(): ReactElement {
         </BoxDocs>
       </Flex>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Design/Icons'
-} as Meta;
+} as Meta
 
 export const Icons: StoryObj = {
   render: () => <IconsWithHooks />
-};
+}

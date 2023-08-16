@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { Spacer } from '@/styles/layout';
-import { BoxDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
-import { P, Span, Subtitle1, Title1, Title2, Title3, Title4, Title5 } from '@/styles/text';
+import { Spacer } from '@/styles/layout'
+import { BoxDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
+import { P, Span, Subtitle1, Title1, Title2, Title3, Title4, Title5 } from '@/styles/text'
 
 function TypographyWithHooks(): ReactElement {
   return (
@@ -77,13 +77,13 @@ function TypographyWithHooks(): ReactElement {
         <P>{'<Span>span</Span>'}</P>
       </BoxDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Design/Typography'
-} as Meta;
+} as Meta
 
 export const Typography: StoryObj = {
   render: () => <TypographyWithHooks />
-};
+}

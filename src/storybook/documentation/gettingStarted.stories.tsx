@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
 import {
   BoxDocs,
@@ -12,8 +12,8 @@ import {
   Subtitle2Docs,
   Title1Docs,
   Title2Docs
-} from '@/styles/storybook';
-import { P } from '@/styles/text';
+} from '@/styles/storybook'
+import { P } from '@/styles/text'
 
 function GettingStartedWithHooks(): ReactElement {
   return (
@@ -327,13 +327,13 @@ function GettingStartedWithHooks(): ReactElement {
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Getting Started'
-} as Meta;
+} as Meta
 
 export const GettingStarted: StoryObj = {
   render: () => <GettingStartedWithHooks />
-};
+}

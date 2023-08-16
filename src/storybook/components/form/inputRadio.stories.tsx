@@ -1,17 +1,17 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { IInputRadioItems } from '@/interface';
+import { IInputRadioItems } from '@/interface'
 
-import { InputRadio, Label } from '@/components/form/form';
-import { FormStyled } from '@/components/form/formStyled';
+import { InputRadio, Label } from '@/components/form/form'
+import { FormStyled } from '@/components/form/formStyled'
 
 function InputRadioWithHooks(): ReactElement {
   // VARIABLE
   const initialData: any = {
     radio: 'value-2'
-  };
+  }
   const itens: IInputRadioItems[] = [
     {
       id: '1',
@@ -28,12 +28,12 @@ function InputRadioWithHooks(): ReactElement {
       label: 'Label 3',
       value: 'value-3'
     }
-  ];
+  ]
 
   // FORM
   const handleSubmit = (): void => {
-    return undefined;
-  };
+    return undefined
+  }
 
   return (
     <FormStyled initialData={initialData} onSubmit={handleSubmit}>
@@ -41,14 +41,14 @@ function InputRadioWithHooks(): ReactElement {
 
       <InputRadio idInput="id-radio" items={itens} itemsDisplay="inline-block" name="radio" />
     </FormStyled>
-  );
+  )
 }
 
 export default {
   component: InputRadio,
   title: 'Components/Form'
-} as Meta;
+} as Meta
 
 export const InputRadioDefault: StoryObj = {
   render: () => <InputRadioWithHooks />
-};
+}

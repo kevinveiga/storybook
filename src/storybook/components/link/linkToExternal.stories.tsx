@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { ILinkExternal } from '@/interface';
+import { ILinkExternal } from '@/interface'
 
-import { LinkToExternal } from '@/components/link/linkToExternal';
+import { LinkToExternal } from '@/components/link/linkToExternal'
 
 export default {
   args: {
@@ -10,6 +10,6 @@ export default {
   },
   component: LinkToExternal,
   title: 'Components/Links'
-} as Meta<ILinkExternal>;
+} as Meta<ILinkExternal>
 
-export const LinkToExternalDefault: StoryObj<ILinkExternal> = {};
+export const LinkToExternalDefault: StoryObj<ILinkExternal> = {}

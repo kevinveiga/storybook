@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, StrongDocs, Title1Docs, Title2Docs } from '@/styles/storybook';
+import { BoxDocs, ListDocs, StrongDocs, Title1Docs, Title2Docs } from '@/styles/storybook'
 
 function FetchGraphQLWithHooks(): ReactElement {
   return (
@@ -120,13 +120,13 @@ const questionsData: IQuestion[] = data?.questions;`}
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/Fetch - GraphQL'
-} as Meta;
+} as Meta
 
 export const FetchGraphQL: StoryObj = {
   render: () => <FetchGraphQLWithHooks />
-};
+}

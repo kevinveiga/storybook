@@ -1,23 +1,23 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, useState } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import yup from '@/helpers/yup';
+import yup from '@/helpers/yup'
 
-import { Label } from '@/components/form/form';
-import { InputPassword, InputPasswordConfirm } from '@/components/form/formCustom';
-import { FormStyled } from '@/components/form/formStyled';
+import { Label } from '@/components/form/form'
+import { InputPassword, InputPasswordConfirm } from '@/components/form/formCustom'
+import { FormStyled } from '@/components/form/formStyled'
 
-import { Spacer } from '@/styles/layout';
+import { Spacer } from '@/styles/layout'
 
 function InputPasswordWithHooks(): ReactElement {
   // VARIABLE
   const initialData: any = {
     password: ''
-  };
+  }
 
   // STATE
-  const [stateInputPassword, setStateInputPassword] = useState('');
+  const [stateInputPassword, setStateInputPassword] = useState('')
 
   // VALIDATE
   const validationSchema = yup.object().shape({
@@ -26,7 +26,7 @@ function InputPasswordWithHooks(): ReactElement {
       .string()
       .oneOf([yup.ref('password'), stateInputPassword], 'passwords must match')
       .required()
-  });
+  })
 
   // FORM
   const handleSubmit = (formData: any): void => {
@@ -37,17 +37,17 @@ function InputPasswordWithHooks(): ReactElement {
         })
         .catch((yupError: any) => {
           if (yupError instanceof yup.ValidationError) {
-            const errorMessages: { [key: string]: any } = {};
+            const errorMessages: { [key: string]: any } = {}
 
             yupError.inner.forEach((item: any) => {
-              errorMessages[item.path] = item.message;
-            });
+              errorMessages[item.path] = item.message
+            })
           }
-        });
-    };
+        })
+    }
 
-    submit().catch(() => null);
-  };
+    submit().catch(() => null)
+  }
 
   return (
     <FormStyled initialData={initialData} onSubmit={handleSubmit}>
@@ -71,17 +71,17 @@ function InputPasswordWithHooks(): ReactElement {
         validationSchema={validationSchema}
       />
     </FormStyled>
-  );
+  )
 }
 
 export default {
   component: InputPassword,
   title: 'Components/Form'
-} as Meta;
+} as Meta
 
 export const InputPasswordDefault: StoryObj = {
   args: {
     inputPassword: ''
   },
   render: () => <InputPasswordWithHooks />
-};
+}

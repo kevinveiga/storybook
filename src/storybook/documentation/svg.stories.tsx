@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { BoxDocs, ListDocs, SpacerDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook';
-import { P } from '@/styles/text';
+import { BoxDocs, ListDocs, SpacerDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook'
+import { P } from '@/styles/text'
 
 function SVGWithHooks(): ReactElement {
   return (
@@ -119,13 +119,13 @@ function SVGWithHooks(): ReactElement {
         </li>
       </ListDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Documentation/SVG'
-} as Meta;
+} as Meta
 
 export const SVG: StoryObj = {
   render: () => <SVGWithHooks />
-};
+}

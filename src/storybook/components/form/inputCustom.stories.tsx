@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import yup from '@/helpers/yup';
+import yup from '@/helpers/yup'
 
-import { Input, Label } from '@/components/form/form';
+import { Input, Label } from '@/components/form/form'
 import {
   InputCep,
   InputCpf,
@@ -13,10 +13,10 @@ import {
   InputName,
   InputNumber,
   InputPhone
-} from '@/components/form/formCustom';
-import { FormStyled } from '@/components/form/formStyled';
+} from '@/components/form/formCustom'
+import { FormStyled } from '@/components/form/formStyled'
 
-import { Spacer } from '@/styles/layout';
+import { Spacer } from '@/styles/layout'
 
 function InputCustomWithHooks(): ReactElement {
   // VARIABLE
@@ -28,7 +28,7 @@ function InputCustomWithHooks(): ReactElement {
     name: '',
     number: '',
     phone: ''
-  };
+  }
 
   // VALIDATE
   const validationSchema = yup.object().shape({
@@ -39,7 +39,7 @@ function InputCustomWithHooks(): ReactElement {
     name: yup.string().required(),
     number: yup.number().required(),
     phone: yup.string().min(14).max(15).required()
-  });
+  })
 
   // FORM
   const handleSubmit = (formData: any): void => {
@@ -50,17 +50,17 @@ function InputCustomWithHooks(): ReactElement {
         })
         .catch((yupError: any) => {
           if (yupError instanceof yup.ValidationError) {
-            const errorMessages: { [key: string]: any } = {};
+            const errorMessages: { [key: string]: any } = {}
 
             yupError.inner.forEach((item: any) => {
-              errorMessages[item.path] = item.message;
-            });
+              errorMessages[item.path] = item.message
+            })
           }
-        });
-    };
+        })
+    }
 
-    submit().catch(() => null);
-  };
+    submit().catch(() => null)
+  }
 
   return (
     <FormStyled initialData={initialData} onSubmit={handleSubmit}>
@@ -104,14 +104,14 @@ function InputCustomWithHooks(): ReactElement {
 
       <InputPhone idInput="id-phone" name="phone" validationSchema={validationSchema} />
     </FormStyled>
-  );
+  )
 }
 
 export default {
   component: Input,
   title: 'Components/Form'
-} as Meta;
+} as Meta
 
 export const InputCustomDefault: StoryObj = {
   render: () => <InputCustomWithHooks />
-};
+}

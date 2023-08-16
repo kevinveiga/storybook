@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { IAccordion } from '@/interface';
+import { IAccordion } from '@/interface'
 
-import { Accordion } from '@/components/accordion/accordion';
+import { Accordion } from '@/components/accordion/accordion'
 
 export default {
   args: {
@@ -27,6 +27,6 @@ export default {
   },
   component: Accordion,
   title: 'Components/Accordion'
-} as Meta<IAccordion>;
+} as Meta<IAccordion>
 
-export const AccordionDefault: StoryObj<IAccordion> = {};
+export const AccordionDefault: StoryObj<IAccordion> = {}

@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { Pagination } from '@/components/pagination/pagination';
+import { Pagination } from '@/components/pagination/pagination'
 
 export default {
   args: {
@@ -11,6 +11,6 @@ export default {
   },
   component: Pagination,
   title: 'Components/Pagination'
-} as Meta;
+} as Meta
 
-export const PaginationDefault: StoryObj = {};
+export const PaginationDefault: StoryObj = {}

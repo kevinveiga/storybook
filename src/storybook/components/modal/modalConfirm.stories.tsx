@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react'
 
-import { ModalConfirm } from '@/components/modal/modalConfirm';
+import { ModalConfirm } from '@/components/modal/modalConfirm'
 
 export default {
   args: {
@@ -8,6 +8,6 @@ export default {
   },
   component: ModalConfirm,
   title: 'Components/Modals'
-} as Meta;
+} as Meta
 
-export const ModalConfirmDefault: StoryObj = {};
+export const ModalConfirmDefault: StoryObj = {}

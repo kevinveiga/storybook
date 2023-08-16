@@ -1,13 +1,13 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
-import { Meta, StoryObj } from '@storybook/react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Meta, StoryObj } from '@storybook/react'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 
-import { Box } from '@/styles/flex';
-import { BoxDocs, ListDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook';
-import { Table, Tbody, Td, Th, Thead, Tr } from '@/styles/table';
-import { Span } from '@/styles/text';
-import { variable } from '@/styles/variable';
+import { Box } from '@/styles/flex'
+import { BoxDocs, ListDocs, Subtitle2Docs, Title1Docs, Title2Docs } from '@/styles/storybook'
+import { Table, Tbody, Td, Th, Thead, Tr } from '@/styles/table'
+import { Span } from '@/styles/text'
+import { variable } from '@/styles/variable'
 
 function BreakpointsWithHooks(): ReactElement {
   return (
@@ -110,13 +110,13 @@ function BreakpointsWithHooks(): ReactElement {
         />
       </BoxDocs>
     </>
-  );
+  )
 }
 
 export default {
   title: 'Design/Breakpoints'
-} as Meta;
+} as Meta
 
 export const Breakpoints: StoryObj = {
   render: () => <BreakpointsWithHooks />
-};
+}
