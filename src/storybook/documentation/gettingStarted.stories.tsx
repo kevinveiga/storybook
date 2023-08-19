@@ -58,10 +58,13 @@ function GettingStartedWithHooks(): ReactElement {
 
       <BoxDocs>
         <SyntaxHighlighter language="javascript">
-          {`"[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+          {`"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
 },
+"editor.defaultFormatter": "esbenp.prettier-vscode",
 "editor.formatOnSave": true,
+"eslint.codeActionsOnSave.mode": "problems",
+"eslint.validate": ["javascript", "typescript"],
 "files.eol": "\\n",
 "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -69,8 +72,16 @@ function GettingStartedWithHooks(): ReactElement {
     "**/node_modules/*/**": true
 },
 "git.autofetch": true,
+"git.confirmSync": false,
+"git.suggestSmartCommit": false,
 "javascript.updateImportsOnFileMove.enabled": "always",
-"typescript.updateImportsOnFileMove.enabled": "always"`}
+"typescript.updateImportsOnFileMove.enabled": "always",
+"[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescriptreact]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}`}
         </SyntaxHighlighter>
       </BoxDocs>
 

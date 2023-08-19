@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react'
 
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Textarea, Label } from '@/components/form/form'
+import { Label, Textarea } from '@/components/form/form'
 import { FormStyled } from '@/components/form/formStyled'
 
 function TextareaWithHooks(): ReactElement {
