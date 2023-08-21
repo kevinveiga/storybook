@@ -205,6 +205,12 @@ function GettingStartedWithHooks(): ReactElement {
         </li>
 
         <li>
+          contexts:
+          <br />
+          <Subtitle2Docs>Context API do projeto.</Subtitle2Docs>
+        </li>
+
+        <li>
           helpers:
           <br />
           <Subtitle2Docs>Funções úteis de uso em geral no projeto.</Subtitle2Docs>
@@ -213,7 +219,7 @@ function GettingStartedWithHooks(): ReactElement {
         <li>
           hooks:
           <br />
-          <Subtitle2Docs>Actions, contexts, reducers e custom hooks.</Subtitle2Docs>
+          <Subtitle2Docs>Actions, reducers e custom hooks.</Subtitle2Docs>
         </li>
 
         <li>
